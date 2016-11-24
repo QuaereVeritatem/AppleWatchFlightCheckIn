@@ -62,6 +62,36 @@
             </objects>
             <point key="canvasLocation" x="-26" y="1"/>
         </scene>
+        <!--BoardingPass-->
+        <scene sceneID="8ho-GG-E4X">
+            <objects>
+                <controller identifier="BoardingPass" id="CAX-7S-7rI" customClass="BoardingPassInterfaceController" customModule="Watch_Extension">
+                    <items>
+                        <group height="30" alignment="center" spacing="4" id="mbh-VV-Wkt">
+                            <items>
+                                <label alignment="left" verticalAlignment="center" text="MEL" id="YZt-fy-cnO">
+                                    <fontDescription key="font" type="system" weight="semibold" pointSize="20"/>
+                                </label>
+                                <imageView width="24" height="20" alignment="left" verticalAlignment="center" image="Plane" id="lza-4u-b0B">
+                                    <color key="tintColor" red="0.98039215690000003" green="0.066666666669999999" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </imageView>
+                                <label alignment="right" verticalAlignment="center" text="SFO" id="4ne-CU-H0k">
+                                    <fontDescription key="font" type="system" weight="semibold" pointSize="20"/>
+                                </label>
+                            </items>
+                        </group>
+                        <imageView width="66" height="66" alignment="center" verticalAlignment="center" image="Activity" animationDuration="1" id="FmZ-Ra-1O9"/>
+                    </items>
+                    <edgeInsets key="margins" left="1" right="1" top="6" bottom="0.0"/>
+                    <connections>
+                        <outlet property="boardingPassImage" destination="FmZ-Ra-1O9" id="z9l-tg-rFc"/>
+                        <outlet property="destinationLabel" destination="4ne-CU-H0k" id="aK3-Ct-PfC"/>
+                        <outlet property="originLabel" destination="YZt-fy-cnO" id="24U-09-5nh"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-26" y="290"/>
+        </scene>
         <!--CheckIn-->
         <scene sceneID="xHO-0j-Qgk">
             <objects>
@@ -105,7 +135,7 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="-169" y="295"/>
+            <point key="canvasLocation" x="-323" y="290"/>
         </scene>
         <!--Air Aber-->
         <scene sceneID="KwF-MY-PiO">

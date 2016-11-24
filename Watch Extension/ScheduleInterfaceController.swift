@@ -37,7 +37,8 @@ class ScheduleInterfaceController: WKInterfaceController {
   //retrieve the appropriate flight from flights using the row index passed into this method, then present the flight details interface, passing flight as the context
   override func table(_ table: WKInterfaceTable, didSelectRowAt rowIndex: Int) {
     let flight = flights[rowIndex]
-    let controllers = ["Flight", "CheckIn"]
+    //checking whether or not the user has checked-in for the selected flight, and if so you present the flight details and boarding pass interface controllers. If they haven’t, present the flight details and check-in interface controllers instead.
+    let controllers = flight.checkedIn ? ["Flight", "BoardingPass"] : ["Flight", "CheckIn"]
     
     //sets selectedIndex to the index of the selected table row
     selectedIndex = rowIndex
